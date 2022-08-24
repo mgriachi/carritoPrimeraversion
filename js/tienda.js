@@ -116,3 +116,11 @@ function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal();
 }
+
+document.querySelector("#confirmarCompra").addEventListener("click", ()=>{
+  Swal.fire(
+    'Genial',
+    'Ya confirmamos tu compra',
+    'success'
+  )
+})
